@@ -7,6 +7,7 @@ const alert = document.querySelector(".alert");
 const startBtn = document.querySelector(".startBtn");
 const timer = document.querySelector(".timer");
 
+
 const quiz = [
   {
     question: " Q1. Who is the leader of BTS?",
@@ -109,6 +110,8 @@ const quiz = [
     answer: "While You Were Sleeping",
   },
 ];
+
+
 
 
 
@@ -284,7 +287,6 @@ startBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
   const selectedChoice = document.querySelector(".choice.selected");
   if (!selectedChoice && nextBtn.textContent === "Next") {
-    // alert("Select your answer");
     displayAlert("Select your answer");
     return;
   }
